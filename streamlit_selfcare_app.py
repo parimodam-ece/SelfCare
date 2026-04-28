@@ -22,16 +22,16 @@ st.markdown(
     }
         /* Force all text elements to black */
     p, span, label, div, h1, h2, h3 {
-        color: black !important;
+        color: black;
     }
 
     /* Streamlit-specific overrides */
     .stRadio label {
-        color: black !important;
+        color: black;
     }
 
     .stMarkdown {
-        color: black !important;
+        color: black;
     }
     </style>
     """,
