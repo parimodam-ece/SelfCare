@@ -125,6 +125,7 @@ categories = {
 
 }
 
+responses = {}
 
 # -----------------------------
 # RESULTS SCREEN
@@ -224,8 +225,5 @@ else:
     with col2:
         st.button("Next ➡", on_click=next_step)
 
-send_email = st.checkbox("📧 Email my results")
 
-if send_email:
-    st.info("Email feature can be connected using SMTP or Gmail API.")
         
