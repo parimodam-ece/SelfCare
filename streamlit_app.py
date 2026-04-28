@@ -2,8 +2,15 @@ import streamlit as st
 
 st.title("🌿 Self-Care Assessment Tool")
 st.write("""
-Reflect on each statement and select how often it applies to your current lifestyle.
+This tool aims to:
 
+1- Promote self-awareness and reflection.
+2- Support holistic wellbeing.
+3- Encourage individuals to identify areas for growth in self-care.
+4- Align with holistic approaches to wellbeing in education and professional practice.
+
+Self-assessment is an important reflective process that helps individuals understand their strengths and areas for improvement and supports self-directed learning.
+Reflect on each statement and select how often it applies to your current lifestyle.
 ### Scale:
 1 = It has never occurred to me  
 2 = Never  
@@ -146,14 +153,21 @@ if st.button("📊 Calculate My Results"):
 
         st.write(f"**{category}:** {cat_score}/{cat_max} ({cat_percent:.1f}%)")
 
+
+
+
+
     # -----------------------------
     # REFLECTION (important for your course)
     # -----------------------------
-    st.subheader("🌱 Reflection")
+    st.subheader("⚠️ Disclaimer")
+st.write("""
+This tool is intended for educational and reflective purposes only.
+It is not a diagnostic or clinical assessment.
+""")
+   # reflection = st.text_area(
+   #     "What is ONE small action you will take this week to improve your self-care?"
+  #  )
 
-    reflection = st.text_area(
-        "What is ONE small action you will take this week to improve your self-care?"
-    )
-
-    if reflection:
-        st.success("Small steps lead to meaningful change 💚")
+#    if reflection:
+ #       st.success("Small steps lead to meaningful change 💚")
