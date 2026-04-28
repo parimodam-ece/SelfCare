@@ -1,5 +1,5 @@
 import streamlit as st
-from fpdf import FPDF
+#from fpdf import FPDF
 
 st.set_page_config(page_title="Self-Care Assessment", layout="centered")
 
