@@ -38,7 +38,13 @@ st.markdown(
         background-color: #45a049 !important;
         color: white !important;
     }
-
+    /* DOWNLOAD BUTTON (this was missing) */
+    .stDownloadButton>button {
+        background-color: #4CAF50 !important;
+        color: white !important;
+        border-radius: 8px;
+        border: none;
+    }
     /* Streamlit-specific overrides */
     .stRadio label {
         color: #9AE6BF;
