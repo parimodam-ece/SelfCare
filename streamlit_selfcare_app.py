@@ -181,8 +181,8 @@ total_questions = len(all_questions)
 # -----------------------------
 # PROGRESS
 # -----------------------------
-st.progress(st.session_state.q_index / total_questions)
-st.write(f"Question {st.session_state.q_index + 1} of {total_questions}")
+#st.progress(st.session_state.q_index / total_questions)
+#st.write(f"Question {st.session_state.q_index + 1} of {total_questions}")
 
 # -----------------------------
 # TXT REPORT FUNCTION
@@ -241,9 +241,10 @@ def create_txt_report():
 # MAIN FLOW
 # -----------------------------
 if st.session_state.q_index < total_questions:
-
+    
     category, question = all_questions[st.session_state.q_index]
-
+    st.progress(st.session_state.q_index / total_questions)
+    st.write(f"Question {st.session_state.q_index + 1} of {total_questions}")
     st.subheader(category)
     st.write(question)
 
