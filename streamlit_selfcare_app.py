@@ -27,11 +27,11 @@ st.markdown(
 
     /* Streamlit-specific overrides */
     .stRadio label {
-        color: black;
+        color: #9AE6BF;
     }
 
     .stMarkdown {
-        color: black;
+        color: #3E6941;
     }
     </style>
     """,
